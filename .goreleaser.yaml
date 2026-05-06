@@ -19,7 +19,6 @@ archives:
       - LICENSE
       - README.md
       - RELEASE_NOTES.txt
-      - "*.pdf"
 
 checksum:
   name_template: "{{ .ProjectName }}_{{ .Version }}_SHA256SUMS"
