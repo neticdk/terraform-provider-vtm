@@ -6,7 +6,7 @@ builds:
     main: ./8.3
     binary: "{{ .ProjectName }}_v{{ .Version }}"
     goos: [freebsd, windows, linux, darwin]
-    goarch: [amd64, "386", arm, arm64]
+    goarch: [amd64, arm64]
     env: [CGO_ENABLED=0]
     flags: [-mod=vendor]
     ldflags: ["-s", "-w", "-X main.version={{.Version}}", "-X main.commit={{.Commit}}"]
